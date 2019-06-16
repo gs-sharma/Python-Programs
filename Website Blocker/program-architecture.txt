@@ -1,0 +1,24 @@
+host file - to block website we can tag the websites here
+
+C:\Windows\System32\drivers\etc - host file location in Windows
+/etc/hosts - for mac & Linux
+
+This program will add some lines in this file at some
+specific time and remove them at other time
+
+GOAL - modify at 8 am & remove at 8 pm
+
+2 ways - open file using Python and add our lines
+        and we use task-scheduler in win
+        or cron in linux
+        or any other task scheduler packages
+        to schedule the task
+
+
+        - Native solution - completly using python
+          script will be running all the time
+          memory will be used every time (though very small memory)
+
+
+# we need admin access to modify the host file , open cmd as admin to run the file 
+# chnage the extension of script to .pyw to that no cmd is prompted on running and you can use in directly by double click on it
